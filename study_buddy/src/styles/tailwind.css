@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #ffffff; /* white */
+    --color-foreground: #101418; /* deep-charcoal */
+    --color-border: #e9ecef; /* gray-200 */
+    --color-input: #ffffff; /* white */
+    --color-ring: #b2cbe5; /* soft-academic-blue */
+    
+    /* Card Colors */
+    --color-card: #f8f9fa; /* warm-gray-50 */
+    --color-card-foreground: #101418; /* deep-charcoal */
+    
+    /* Popover Colors */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #101418; /* deep-charcoal */
+    
+    /* Muted Colors */
+    --color-muted: #f8f9fa; /* warm-gray-50 */
+    --color-muted-foreground: #6c757d; /* neutral-gray */
+    
+    /* Primary Colors */
+    --color-primary: #b2cbe5; /* soft-academic-blue */
+    --color-primary-foreground: #101418; /* deep-charcoal */
+    
+    /* Secondary Colors */
+    --color-secondary: #5c728a; /* muted-blue-gray */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #dc3545; /* restrained-red */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #f8f9fa; /* warm-gray-50 */
+    --color-accent-foreground: #101418; /* deep-charcoal */
+    
+    /* Success Colors */
+    --color-success: #28a745; /* academic-green */
+    --color-success-foreground: #ffffff; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #ffc107; /* amber */
+    --color-warning-foreground: #101418; /* deep-charcoal */
+    
+    /* Error Colors */
+    --color-error: #dc3545; /* restrained-red */
+    --color-error-foreground: #ffffff; /* white */
+    
+    /* Text Colors */
+    --color-text-primary: #101418; /* deep-charcoal */
+    --color-text-secondary: #6c757d; /* neutral-gray */
+    
+    /* Surface Color */
+    --color-surface: #f8f9fa; /* warm-gray-50 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Newsreader', serif;
+  }
+  
+  .font-caption {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
